@@ -1,0 +1,41 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: blue;   
+}
+
+body{
+    background-color: rgb(231, 148, 148);
+}
+#percusion{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: purple;
+}
+.estiloespecial{
+    color: brown;
+    font-size: 30px;
+}
+header{
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 30px;
+}
+footer{
+    background-color: gray;
+}
+#bateria{
+    margin: 20px;
+    border: 30px solid;
+    width: 200px;
+    height: auto;
+}
+.texto{
+    background-color: beige;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
