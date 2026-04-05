@@ -25,32 +25,32 @@
 
 body {
     font-family: 'Source Sans 3', Georgia, serif;
-    /* Según leí en internet, con esto debería llamar a las fuentes que importo en el archivo /fuentes1.css, pero no está andando, CONSULTAR */
     background-color: var(--beige); /* Con el atributo var(), puedo llamar a una variable. En este caso, un color que seteo en la pseudoclase :root. */
     color: var(--texto-oscuro); /* Color del texto dentro del body */
     line-height: 1.7; 
 }
 
 h1 {
-
-    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    font-family: 'Source Sans 3', Georgia, serif;
     font-size: 48px;
     font-weight: bold;
     color: var(--azul-oscuro);
 }
 
 h2 {
-    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    font-family: 'Source Sans 3', Georgia, serif;
     font-size: 24px;
     font-weight: bold;
     color: var(--azul-oscuro);
-    border-bottom: 2px solid var(--azul-claro); /* Borde de separación del título */
+    /* border-bottom: 2px solid var(--azul-claro);  Borde de separación del título
     padding-bottom: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 24px;*/
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
     color: var(--azul-medio);
 }
@@ -62,7 +62,7 @@ p {
 }
 
 a {
-    color: var(--azul-medio);
+    color: var(--azul-claro);
     text-decoration: none;
 }
 
@@ -72,17 +72,75 @@ a:hover {
 
 /* BARRA DE NAVEGACIÓN */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--azul-oscuro);
-  padding: 1rem 3rem;
-  position: sticky;
-  top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-oscuro);
+    padding: 16px;
 }
 
 .navbar-links {
-  display: flex;
-  gap: 32PX;
-  list-style: none;
+    font-size: x-large;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+/* BARRA DE NAVEGACIÓN DE INTERESES*/
+.navbar-intereses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-medio);
+    padding: 16px;
+}
+
+.navbar-intereses-links {
+    font-size: x-large;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.infografia {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+
+}
+
+.interes {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+} 
+
+main {
+    margin: 10px auto;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main h3 a {
+    color: var(--texto-oscuro);
+}
+
+div p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer {
+    background-color: var(--azul-oscuro);
+}
+
+footer p {
+    color: var(--azul-claro);
+    text-align: center;
+    margin: 0;
 }
