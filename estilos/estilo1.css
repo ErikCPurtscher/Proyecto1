@@ -1,41 +1,88 @@
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: blue;   
+/* FUENTES DE GOOGLE IMPORTADAS */
+/* Con esto puedo importar fuentes que no tengo instaladas en mí computadora */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+/* PALETA DE COLORES */
+/* Según leí en internet, los colores se ponen en la pseudoclase :root para asegurarse de que sean aplicados a todo el proyecto */
+/* Luego los puedo llamar con el valor var() en las propiedades de color */
+:root {
+    --azul-oscuro:  #1d3557;
+    --azul-medio:   #457b9d;
+     --azul-claro:   #a8dadc;
+    --beige:        #f5f0e8;
+    --beige-oscuro: #e0d6c4;
+    --texto-oscuro: #2c2c2c;
+    --texto-claro:  #ffffff;
+    --borde:        #c9bfa8;
 }
 
-body{
-    background-color: rgb(231, 148, 148);
+/* RESET PARA NAVEGADORES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#percusion{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: purple;
+
+body {
+    font-family: 'Source Sans 3', Georgia, serif;
+    /* Según leí en internet, con esto debería llamar a las fuentes que importo en el archivo /fuentes1.css, pero no está andando, CONSULTAR */
+    background-color: var(--beige); /* Con el atributo var(), puedo llamar a una variable. En este caso, un color que seteo en la pseudoclase :root. */
+    color: var(--texto-oscuro); /* Color del texto dentro del body */
+    line-height: 1.7; 
 }
-.estiloespecial{
-    color: brown;
-    font-size: 30px;
+
+h1 {
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--azul-oscuro);
 }
-header{
-    background-color: blue;
-    margin: 20px;
-    padding: 20px;
-    border: 3px solid;
-    border-radius: 30px;
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    border-bottom: 2px solid var(--azul-claro); /* Borde de separación del título */
+    padding-bottom: 8px;
+    margin-bottom: 24px;
 }
-footer{
-    background-color: gray;
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--azul-medio);
 }
-#bateria{
-    margin: 20px;
-    border: 30px solid;
-    width: 200px;
-    height: auto;
+
+p {
+    font-size: 16pxº;
+    color: var(--texto-oscuro);
+    margin-bottom: 12px;
 }
-.texto{
-    background-color: beige;
-    width: 300px;
-    height: auto;
-    padding: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: blueviolet;
+
+a {
+    color: var(--azul-medio);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--azul-oscuro);
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32PX;
+  list-style: none;
 }
